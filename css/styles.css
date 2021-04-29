@@ -27,8 +27,13 @@ body {
 
 .userBar ul.nav li {
   display: inline;
-  font-size: 11px;
-  font-weight: bold;
+  font-size: 10px;
+  font-weight: 600;
+  
+}
+.userBar ul.nav li a {
+  text-decoration: none;
+  color: #000;
 }
 
 .userBar ul.nav li:before {
@@ -95,6 +100,7 @@ body {
 
 .navBar a {
   text-decoration: none;
+  color: #000;
 }
 
 .navBar  ul li {
@@ -143,7 +149,6 @@ body {
   display: block;
   list-style-type: none;
   
-  color: #000;
 }
 
 .sidebar ul li a {
@@ -151,6 +156,7 @@ body {
   padding: 11px;
   text-decoration: none;
   font-size: 11px;
+  color: #000;
 }
 
 .sidebar ul li a > span {
@@ -170,19 +176,94 @@ body {
   background-color: #ffffff;
 }
 
+.downIcon {
+  background:url('../img/down.png') no-repeat;
+  width:16px; 
+  height:16px;
+  display: block;
+  float: right;
+}
+.barIcon {
+  background:url('../img/bar.png') no-repeat;
+  width:16px; 
+  height:16px;
+  display: block;
+  float: right;
+}
 /**sidebar over**/
+.tabBar {
+  border-bottom: 3px solid #2fc1da;
+}
+
+.tabBar ul li {
+  height:25px;
+  list-style-type: none;
+  float: left;
+  width:50%;
+}
+
+.tabBar ul li a{
+  font-size: 13px;
+  font-weight:500;
+  text-decoration: none;
+  text-align: center;
+  color:#000;
+}
+
+.tabBar .blueBg {
+  text-align: center;
+  background: url(../img/blueBg.png) no-repeat;
+}
+.tabBar .blueBg a{
+  color:fff;
+}
+.tabBar .grayBg {
+  text-align: center;
+  background: url(../img/faded.png) no-repeat;
+}
+.tabBar .grayBg:hover {
+  text-align: center;
+  background: url(../img/blueBg.png) no-repeat;
+}
+
+.tab1 {
+  float: left;
+  width: 49.8%;
+  background: url(../img/tabl.png) no-repeat;
+  background-size:cover;
+}
+
+.tabBar ul {
+  padding:5px;
+}
+
+.tabBar .tabTitle {
+  margin:11px;
+  text-align: center;
+}
+
+.tab2 {
+  margin-left:.4%;
+  float:right;
+  width: 49.8%;
+  background: url(../img/tabr.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
 
 .posts {
   width: 100%;
   padding: 15px 0 15px 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #D8D8D8;
 }
 .posts h2.title {
     font-size: 14px;
     padding-bottom: 6px;
   }
   
-.posts h2.title a {
+  .posts h2.title a {
+  text-decoration: none;
     color: #000000;
   }
 
@@ -197,11 +278,28 @@ body {
 .posts .description {
   float: left;
   font-size: 11px;
-  padding: 0 7px;
+  padding: 0 5px;
+}
+.posts .description span.blue {
+  color:#2fc1da;
 }
 
+.upperTitle {
+  font-size: 11px;
+}
+.blueText {
+  color:#2fc1da;
+  font-weight: bold;
+}
+.redText {
+  color:red;
+  font-weight: bold;
+}
 
-
+.greenText {
+  color:green;
+  font-weight: bold;
+}
 /** FOO TER **/
 
 .footer {
